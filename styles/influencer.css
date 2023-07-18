@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: 760px 65px;
+  background-size: 450px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1400px;
+  margin: 30px auto 0;
+}
+.nav-list ul {
+  list-style: none;
+  display: flex;
+  margin-right: 50px;
+}
+.nav-list ul a {
+  text-decoration: none;
+  margin-right: 50px;
+}
+.nav-logo {
+  color: #3a3a3a;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 100px;
+}
+.banner-left {
+  width: 50%;
+  margin-left: 100px;
+}
+.banner-left-head {
+  color: #3a3a3a;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.banner-left-p {
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.banner-left-button {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  border-radius: 2.3rem;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.banner-right {
+  width: 50%;
+  margin-left: 70px;
+}
+.banner-right {
+  /* background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+}
+.banner-main-img img {
+  width: 400px;
+  margin-left: 30px;
+}
+
+/* for small devices */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-logo {
+    margin-left: 0px;
+  }
+  .nav-list ul {
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .nav-list ul a {
+    margin-right: 5px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-left {
+    width: 100%;
+    margin-left: 30px;
+  }
+  .banner-right {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .banner-main-img img {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .banner {
+    background-position: 25px 25px;
+    background-size: 320px;
+  }
+  .banner-left-head {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .banner-left-p {
+    margin-left: 20px;
+  }
+  .banner-left-button {
+    margin-left: 20px;
+  }
+}
